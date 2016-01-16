@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lyrics Viewer</string>
+    <string name="no_lyrics">No lyrics</string>
+</resources>
