@@ -23,8 +23,10 @@ package me.aeolwyr.lyrics;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.widget.TextView;
@@ -39,6 +41,8 @@ import org.jaudiotagger.tag.TagException;
 
 import java.io.File;
 import java.io.IOException;
+
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 
 /**
  * The activity has shows the lyrics. It also listens for any lyrics change while it is active.
@@ -106,6 +110,24 @@ public class MainActivity extends Activity {
         String[] projection = new String[]{"artist", "title", "_data"};
         String selection = "artist=? AND title=?";
         String[] selectionArgs = new String[]{artist, track};
+
+        // ask for the read permission on marshmallow
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkPermission(READ_EXTERNAL_STORAGE,
+                    android.os.Process.myPid(), android.os.Process.myUid())
+                    != PackageManager.PERMISSION_GRANTED) {
+                // permission needed
+                if (!shouldShowRequestPermissionRationale(READ_EXTERNAL_STORAGE)) {
+                    // asking for the first time
+                    requestPermissions(new String[]{READ_EXTERNAL_STORAGE}, 0);
+                } else {
+                    // denied previously
+                    lyricsView.setText(R.string.permission_denied);
+                }
+                // don't continue without the permission
+                return;
+            }
+        }
 
         Cursor cursor = getContentResolver().query(uri, projection, selection, selectionArgs, null);
 
