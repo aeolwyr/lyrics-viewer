@@ -16,6 +16,11 @@ streaming services are not supported.
 
 It is only tested with the Google Play Music player.
 
+Download
+--------
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="50px">](https://play.google.com/store/apps/details?id=me.aeolwyr.lyrics)  
+…or download directly from the [releases page](https://github.com/aeolwyr/lyrics-viewer/releases).
+
 Screenshots
 -----------
 <img src="https://cloud.githubusercontent.com/assets/8158408/12368726/b5e8269c-bbf6-11e5-8ac5-1c60e5895975.png" width="40%" />
