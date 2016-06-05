@@ -14,7 +14,16 @@ to the music files manually, using a tag editor.
 Because the lyrics are read from the music files, online music
 streaming services are not supported.
 
-It is only tested with the Google Play Music player.
+Tested with:
+* [Google Play Music](https://play.google.com/store/apps/details?id=com.google.android.music)
+* [Shuttle Music Player](https://play.google.com/store/apps/details?id=another.music.player)
+* [Phonograph Music Player](https://play.google.com/store/apps/details?id=com.kabouzeid.gramophone)
+* [Poweramp Music Player](https://play.google.com/store/apps/details?id=com.maxmpz.audioplayer)
+* [BlackPlayer Music Player](https://play.google.com/store/apps/details?id=com.kodarkooperativet.blackplayerfree)
+* [GoneMAD Music Player](https://play.google.com/store/apps/details?id=gonemad.gmmp)
+* [doubleTwist Music Player](https://play.google.com/store/apps/details?id=com.doubleTwist.androidPlayer)
+* [Stellio Music Player](https://play.google.com/store/apps/details?id=ru.stellio.player)
+* [Neutron Music Player](https://play.google.com/store/apps/details?id=com.neutroncode.mpeval)
 
 Download
 --------
