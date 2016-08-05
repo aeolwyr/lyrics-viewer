@@ -24,6 +24,11 @@ Tested with:
 * [doubleTwist Music Player](https://play.google.com/store/apps/details?id=com.doubleTwist.androidPlayer)
 * [Stellio Music Player](https://play.google.com/store/apps/details?id=ru.stellio.player)
 * [Neutron Music Player](https://play.google.com/store/apps/details?id=com.neutroncode.mpeval)
+* HTC Music Player
+* [Rocket Music Player](https://play.google.com/store/apps/details?id=com.jrtstudio.AnotherMusicPlayer)
+* [Music Player](https://play.google.com/store/apps/details?id=com.jrtstudio.music) (JRT Studios)
+* [PlayerPro Music Player](https://play.google.com/store/apps/details?id=com.tbig.playerprotrial)
+* [Pulsar Music Player](https://play.google.com/store/apps/details?id=com.rhmsoft.pulsar)
 
 Download
 --------

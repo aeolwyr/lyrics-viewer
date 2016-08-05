@@ -26,6 +26,22 @@
             <intent-filter>
                 <action android:name="com.android.music.metachanged" />
                 <action android:name="com.android.music.playstatechanged" />
+                <!-- last.fm compatible players (e.g. Pulsar) -->
+                <action android:name="fm.last.android.metachanged" />
+                <!-- HTC Music Player -->
+                <action android:name="com.htc.music.metachanged" />
+                <action android:name="com.htc.music.playstatechanged" />
+                <!-- Rocket Music Player -->
+                <action android:name="com.jrtstudio.AnotherMusicPlayer.metachanged" />
+                <action android:name="com.jrtstudio.AnotherMusicPlayer.playstatechanged" />
+                <!-- Music Player (JRT Studios) -->
+                <action android:name="com.jrtstudio.music.metachanged" />
+                <action android:name="com.jrtstudio.music.playstatechanged" />
+                <!-- PlayerPro Music Player -->
+                <action android:name="com.tbig.playerpro.metachanged" />
+                <action android:name="com.tbig.playerpro.playstatechanged" />
+                <action android:name="com.tbig.playerprotrial.metachanged" />
+                <action android:name="com.tbig.playerprotrial.playstatechanged" />
             </intent-filter>
         </receiver>
     </application>
