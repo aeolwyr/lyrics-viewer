@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "me.aeolwyr.lyrics"
         minSdkVersion 11
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 2
         versionName "1.1"
     }
@@ -20,8 +20,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'org:jaudiotagger:2.0.3'
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
+    api 'org:jaudiotagger:2.0.3'
     //testCompile 'junit:junit:4.12'
     //compile 'com.android.support:appcompat-v7:23.1.1'
 }
